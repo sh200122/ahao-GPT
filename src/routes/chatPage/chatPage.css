@@ -1,0 +1,43 @@
+.chatPage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .wrapper {
+    flex: 1;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+
+    .chat {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      p,
+      li {
+        margin: 10px 0px;
+      }
+
+      .message {
+        padding: 20px;
+
+        &.user {
+          background-color: #f4f4f4;
+          color: black;
+          border-radius: 20px;
+          max-width: 80%;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
